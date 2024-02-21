@@ -1,0 +1,30 @@
+.courses-container{
+    display: flex;
+    //flex-wrap: wrap;
+}
+#nav1{
+    border-left: 5px solid darkred;
+    padding-left:10px;
+    margin: 10px;
+    //border: solid;
+}
+
+#nav1 h2{
+    color: darkred;
+}
+.course {
+    //display: flex;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.course img{
+    height: 200px;
+    width: 450px;
+}
+.course h2 {
+    color: #333;
+}
+.course p {
+    color: #666;
+}
