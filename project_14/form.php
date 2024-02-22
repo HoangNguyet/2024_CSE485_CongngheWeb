@@ -33,8 +33,20 @@
             justify-content: center;
 
         }
+        .gird-container2{
+            display: grid;
+            grid-template-columns: 30% 80%;
+            grid-template-rows: 200px 60px 30px 120px ;
+            padding-top:20px ;
+            padding-left: 100px;
+            justify-content: center;
+
+        }
         .gird-container div{
             align-self: center;
+        }
+        .footer_1{
+            border-top: 2px solid black ;
         }
     </style>
 </head>
@@ -115,6 +127,38 @@ $countries=array(
     <header>
         <h4>Optional Info</h4>
     </header>
+    <div class="gird-container2">
+        <div>Note</div>
+        <div></div>
+        <div>Preferred Shift</div>
+        <div><input type="radio" name="select" value="option1">Regular <br>
+            <input type="radio" name="select" value="option2">Grawy Yard<br>
+        </div>
+        <div>Active?</div>
+        <div><input type="button"></div>
+        <div>Are you human?</div>
+        <div>
+            <div style="font-size: 30px;font-family: Arial,sans-serif;text-decoration: dashed">
+                TIDAWO
+            </div>
+            <div>
+                <p style="justify-content: center">Click to change</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
 </optional>
+<footer class="footer_1">
+    <div class="item">
+        <div class="item icon">
+        </div>
+        <div class="item icon">
+        </div>
+        <div class="item icon">
+        </div>
+        <div class="item icon">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
