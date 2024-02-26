@@ -9,7 +9,7 @@ $users = [
     [
         "username" => "Nguyễn Thị Thanh Mai chó",
         "password" => password_hash("khongbiet", PASSWORD_DEFAULT),
-        "name" => "Mai ăn cứt",
+        "name" => "Mai cho",
         "email" => "maingu@gmail.com"
     ],
     [
