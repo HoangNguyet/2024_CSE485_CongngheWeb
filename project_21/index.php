@@ -43,34 +43,22 @@
             }
     ?>
 </div>
-
 <div class="pagination">
-
-    <?php  if(isset($_GET['prev'] )&& $currentPage>1) {
-        $previousPage = $currentPage - 1;
-        header("Location: ?page=$previousPage");
-        exit;
-    }
-    if (isset($_GET['next']) && $currentPage < $totalPages) {
-        $nextPage = $currentPage + 1;
-        header("Location: ?page=$nextPage");
-        exit;
-    }
-    ?>
     <?php if ($currentPage > 1): ?>
-        <a href="?prev=true">Previous</a>
+        <a href="?page=<?php echo $currentPage - 1; ?>">Previous</a>
     <?php endif; ?>
 
-    <?php  for($i=1;$i<$totalPages;$i++): ?>
-        <?php if($i==$currentPage):?>
+    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+        <?php if ($i == $currentPage): ?>
             <span class="active"><?php echo $i; ?></span>
-        <?php else:   ?>
-            <a href="?page=<?php echo $i;?>"><?php echo $i;?></a>
+        <?php else: ?>
+            <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
         <?php endif; ?>
-    <?php endfor;?>
-    <?php if($currentPage<$totalPages):?>
-        <a href="?next=true">Next</a>
-    <?php endif;?>
+    <?php endfor; ?>
+
+    <?php if ($currentPage < $totalPages): ?>
+        <a href="?page=<?php echo $currentPage + 1; ?>">Next</a>
+    <?php endif; ?>
 </div>
 </body>
 </html>
