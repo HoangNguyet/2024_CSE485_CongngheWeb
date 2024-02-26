@@ -1,0 +1,74 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    /*width: 24%; !* Mỗi sản phẩm chiếm 25% chiều rộng của container cha *!*/
+    /*padding: 0 10px; !* Khoảng cách giữa các sản phẩm *!*/
+    /*margin: 0 10px 20px 0;*/
+    /*box-sizing: border-box; !* Đảm bảo padding không làm thay đổi kích thước của sản phẩm *!*/
+    /*float: left; !* Đặt sản phẩm vào cùng một hàng *!*/
+    /*background-color: #d2cfcf;*/
+    /*overflow: hidden;*/
+    /*border-radius: 5px;*/
+    width: 23%; /* Mỗi sản phẩm chiếm 50% chiều rộng của container cha và trừ đi khoảng cách */
+    margin: 0 10px 20px 0; /* Khoảng cách giữa các sản phẩm và bottom margin */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của sản phẩm */
+    float: left; /* Đặt sản phẩm vào cùng một hàng */
+    overflow: hidden; /* Ngăn chặn phần nội dung vượt qua khung */
+    padding: 0 10px;
+}
+.product:nth-child(4n+1) {
+    clear: both;
+}
+/* Thiết lập hiệu ứng khi di chuột vào sản phẩm */
+.product:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Ẩn đường viền của thẻ a */
+.product a {
+    display: flex;
+    flex-direction: column; /* Đảo ngược chiều sắp xếp của các thành phần trong flex container */
+    text-decoration: none;
+    color: inherit;
+}
+/* CSS cho phân trang */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
+/* CSS cho ảnh sản phẩm */
+.image {
+    width: 100%; /* Chiếm 50% chiều rộng của sản phẩm */
+    overflow: hidden; /* Ngăn chặn hình ảnh vượt qua khung */
+}
+
+.image img {
+    width: 100%; /* Ảnh rộng full trong phần ảnh */
+    height: 400px; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+}
+
+/* CSS cho phần thông tin sản phẩm */
+.details {
+    width: 50%; /* Chiếm 50% chiều rộng của sản phẩm */
+    padding: 10px; /* Khoảng cách bên trong phần thông tin sản phẩm */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của phần thông tin */
+}
+

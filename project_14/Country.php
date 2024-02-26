@@ -6,52 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Example</title>
-    <style>
-        /* CSS cho form */
-        form {
-            border: 1px solid #ccc;
-            max-width: 600px; /* Định kích thước tối đa của form */
-            margin: 0 auto; /* Canh giữa form trên trình duyệt */
-            padding: 20px; /* Tạo khoảng cách giữa nội dung và viền của form */
-        }
 
-        /* CSS cho các nhóm trường */
-        .form-group {
-            margin-bottom: 15px; /* Tạo khoảng cách giữa các nhóm trường */
-        }
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        /* CSS cho nhãn của trường */
-        .form-group label {
-            display: inline-block; /* Hiển thị nhãn trên cùng một dòng */
-            width: 150px; /* Định kích thước của nhãn */
-            font-weight: bold; /* Đặt độ đậm cho nhãn */
-        }
 
-        /* CSS cho trường nhập liệu */
-        .form-group input[type='text'],
-        .form-group select {
-            width: calc(100% - 170px); /* Đặt kích thước cho trường nhập liệu, để lại 20px cho padding và border */
-            padding: 5px; /* Tạo khoảng cách bên trong trường nhập liệu */
-            border: 1px solid #ccc; /* Định kiểu viền cho trường nhập liệu */
-            border-radius: 3px; /* Định kiểu bo tròn cho góc của trường nhập liệu */
-        }
-                h2 {
-                   border-bottom: 1px solid #000;
-                   padding-bottom: 5px;
-                }
-        /* Định dạng radio button */
-        .form-option input[type="radio"] {
-            display: inline-block;
-            margin-right: 5px; /* Khoảng cách giữa radio button và nhãn */
-        }
-
-        /* Định dạng nhãn của radio button */
-        .form-option label {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-    </style>
 </head>
 <body>
 <?php
