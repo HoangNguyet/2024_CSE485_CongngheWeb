@@ -41,11 +41,11 @@ $product = [
         'description' => 'A gloves made in VietNam'
     ],
     [
-        'id' => 1,
-        'image' => 'assets\img\t-shirt.jpg',
-        'name' => 'T-shirt',
-        'price'=>15.8,
-        'description'=>'A comportable and stylish T-shirt'
+        'id'=> 3,
+        'image' => 'assets\img\hat.jpg',
+        'name' => 'Hat',
+        'price' => 5.9,
+        'description' => 'A hat made in VietNam'
     ],
     [
         'id' => 1,
@@ -55,11 +55,11 @@ $product = [
         'description'=>'A comportable and stylish T-shirt'
     ],
     [
-        'id' => 1,
-        'image' => 'assets\img\t-shirt.jpg',
-        'name' => 'T-shirt',
-        'price'=>15.8,
-        'description'=>'A comportable and stylish T-shirt'
+        'id'=> 3,
+        'image' => 'assets\img\hat.jpg',
+        'name' => 'Hat',
+        'price' => 5.9,
+        'description' => 'A hat made in VietNam'
     ],
     [
         'id' => 1,

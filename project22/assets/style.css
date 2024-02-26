@@ -1,0 +1,26 @@
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form{
+    width: 450px;
+    padding: 20px;
+    border: 1px solid #333333;
+}
+.input
+{
+    margin: 7px;
+    width: 250px;
+    height: 25px;
+}
+.button{
+    background-color: #f53434;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    font-weight: bold;
+}
