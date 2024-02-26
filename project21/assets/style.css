@@ -1,0 +1,35 @@
+.product-container
+{
+    display: flex;
+}
+.product {
+//display: flex;
+    color: #f9f9f9;
+    background-color: darkred;
+    padding: 10px;
+    margin: 25px;
+}
+.product img{
+    height: 300px;
+    width: 300px;
+}
+.pagination {
+    display: inline-block;  /*đảm bảo các phần tử không bị ngắt dòng*/
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+.pagination .active {
+    font-weight: bold;
+}
