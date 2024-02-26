@@ -1,0 +1,29 @@
+.form{
+    border: 1px solid #333333;
+    width: 450px;
+    height: 300px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.form h2{
+    color: #f53434;
+    font-weight: bold;
+}
+.form button{
+    font-weight: bold;
+    margin: 10px;
+    color: #f9f9f9;
+    background-color: #2121a9;
+    padding: 5px;
+    width: 100px;
+}
+.form input{
+    margin: 10px;
+    padding: 5px;
+    width: 280px;
+}

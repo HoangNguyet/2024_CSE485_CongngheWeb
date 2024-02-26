@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,7 @@
     <title>Product</title>
 </head>
 <body>
+<div class="container">
 <?php
 
 $product = [
@@ -101,6 +102,7 @@ $currentPageItems = array_slice($product, ($currentPage-1) * $itemsPerPage, $ite
     <?php if($currentPage < $totalPage): ?>
         <a href="?page=<?php echo $currentPage + 1; ?>">Next</a>
     <?php endif; ?>
+</div>
 </div>
 </body>
 </html>
