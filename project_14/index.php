@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    $contries = array(
+    <?php
+    $countries = array(
         'BẮC NINH',
         'HÀ NỘI',
         'THÁI NGUYÊN',
@@ -16,5 +17,6 @@
         'HÀ NAM',
         'VĨNH PHÚC',
     );
+    ?>
 </body>
 </html>
