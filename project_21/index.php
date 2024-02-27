@@ -35,9 +35,9 @@
             <div class="product">
                 <img src="img/pd-content-1673850013-8463.jpg" class="card-img-top" alt="anh chiec ao">
                 <div class="card_body">
-                    <h4>'.$product['name'].'</h4>
-                    <h5>'.$product['price'].'</h5>
-                    <h6>'.$product['description'].'</h6>
+                    <h5>'.$product['name'].'</h5>
+                    <h6>'.$product['price'].'$</h6>
+                    <h6 style="font-size: 10px;font-family: Arial">'.$product['description'].'</h6>
                 </div>
             </div>';
             }
