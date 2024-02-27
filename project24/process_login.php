@@ -1,28 +1,29 @@
 <?php
-    $users = [
-    [
-        "username" => "Hoàng Ánh Nguyệt",
-        "password" => password_hash("31012003", PASSWORD_DEFAULT),
-        "name" => "Nguyệt",
-        "email" => "nguyethoanghan@gmail.com"
-    ],
-    [
-        "username" => "Nguyễn Thị Thanh Mai chó",
-        "password" => password_hash("khongbiet", PASSWORD_DEFAULT),
-        "name" => "Mai cho",
-        "email" => "maingu@gmail.com"
-    ],
-    [
-        "username" => "Hoàng Minh Nghĩa",
-        "password" => password_hash("14012016", PASSWORD_DEFAULT),
-        "name" => "Nghĩa",
-        "email" => "hoangminhnghia@gmail.com"
-    ],
-    [
-        "username" => "Hoàng Minh Hải",
-        "password" => password_hash("22092007", PASSWORD_DEFAULT),
-        "name" => "Hải",
-        "email" => "hoangminhhai@gmail.com"
-    ],
-];
+
+global $users;
+session_start();
+    include "users.php";
+    // Lấy dữ liệu người dùng trên form
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $user_found = false;
+    foreach ($users  as $u)
+    {
+        //Kiểm tra xem dữ liệu nhập vào có đúng
+        if($u['username'] == $username && password_verify($password, $u['password']))
+        {
+            $user_found = true;
+            $_SESSION['user_id'] = $u['username'];//Lưu trữ tên người duùng trong biến phiên, theo doõi người dùng và xem ai đang đăng nhập
+            $_SESSION['user_role'] = $u['role']; // thiết lập 1 phiên để xác định vai trò nguười dùng sau khi họ đăng nhập
+            break;
+        }
+    }
+    if($user_found) // nếu tìm thấy người dùng
+    {
+        setcookie('logged_in', true, time()+60*60*24*30, "/"); // cài đặt cookie trong 30 ngày
+        header("location: profile.php");
+    }
+    else{
+        echo "Invalid username or password";
+    }
 ?>
