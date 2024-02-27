@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 350px;
+    text-align: center;
+    justify-content: center;
+    border: green 2px solid;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(162, 243, 216);
+}
+.button{
+    color: white;
+    background-color:rgb(237, 122, 28) ;
+    border: 2px solid rgb(32, 25, 25);
+    border-radius: 15px;
+}
+.avatar{
+    margin-left: 80px;
+}
+

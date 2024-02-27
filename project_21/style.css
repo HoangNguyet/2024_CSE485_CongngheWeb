@@ -1,0 +1,36 @@
+* {
+    margin: 1px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product{
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #329dba;
+    border-radius: 5px;
+    background-color: rgb(239, 224, 205);
+}
+.product:hover{
+    color: rgb(243, 49, 81);
+}
+
+.abc{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.card_body{
+    text-align: center;
+    margin-top: 20px;
+}
+.page-item{
+    margin-top: 15%;
+}

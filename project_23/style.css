@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 350px;
+    text-align: center;
+    justify-content: center;
+    border: green 2px solid;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(162, 243, 216);
+}

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project_21</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<div class="container products">
     <?php
     $products = [
         ["id" => 1,"name" => "T-Shirt","price" => 15.99,"description" => "A comfortable and stylish T-Shirt.", "image" => "https://chiinstore.com/media/product/4552_634x634___2022_06_01t162723_142.png"],
@@ -26,7 +27,7 @@
         
     ];
     // so san pham tren moi trang
-    $itemsPerPage = 4;
+    $itemsPerPage = 3;
     // truy cap so trang hien tai
     $currentPage= isset($_GET['page']) ? $_GET['page'] : 1;
     // tinh tong so trang
@@ -40,30 +41,46 @@
     foreach ($currentPageItems as $product){
         echo'
             <div class="product">
-                <img src="https://chiinstore.com/media/product/4552_634x634___2022_06_01t162723_142.png" class ="abc">
-                <div class="card_body">
-                    <h2>'.$product['name'].'</h2>
-                    <h2>'.$product['price'].'</h2>
-                    <h3>'.$product['description'].'</h3>
+            <center>
+                <img src="https://yeepvn.sgp1.digitaloceanspaces.com/2023/03/3ae0b93b01281677690e604d25a2cb9c.jpg" class ="abc">
+            </center>
+                <div class="card_body">'.
+                    $product['name'].'</br>'.
+                    $product['price'].'</br>'.
+                    $product['description'].'
                 </div>
             </div>';
             }
     ?>
 </div>
-<div class="pagination">
-    <?php if ($currentPage > 1): ?>
-        <a href="?page=<?php echo $currentPage - 1; ?>">Previous</a>
-    <?php endif; ?>
-    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-        <?php if ($i == $currentPage): ?>
-            <span class="active"><?php echo $i; ?></span>
-        <?php else: ?>
-            <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+<div class="">
+    <nav aria-label="">
+      <ul class="pagination">
+        <?php if ($currentPage > 1): ?>
+            <li class="page-item">
+                <a class="page-link" href="?page=<?php echo $currentPage - 1; ?>" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
         <?php endif; ?>
-    <?php endfor; ?>
-    <?php if ($currentPage < $totalPages): ?>
-        <a href="?page=<?php echo $currentPage + 1; ?>">Next</a>
-    <?php endif; ?>
+        <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+            <?php if ($i == $currentPage): ?>
+                <li class="page-item active"><span class="page-link"><?php echo $i; ?></span></li>
+            <?php else: ?>
+                <li class="page-item"><a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+            <?php endif; ?>
+        <?php endfor; ?>
+        <?php if ($currentPage < $totalPages): ?>
+            <li class="page-item">
+                <a class="page-link" href="?page=<?php echo $currentPage + 1; ?>" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        <?php endif; ?>
+      </ul>
+    </nav>
 </div>
 </body>
 </html>
