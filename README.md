@@ -8,5 +8,9 @@ Welcome to my project :)
 ![kết quả dự án 2.3](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/project23.1.png)
 
 ![kết quả dự án 2.31](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/project23.2.png)
+![kết quả dự án 2.4](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/project23.1.png)
+![kết quả dự án 2.4](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/Screenshot%202024-02-27%20145910.png)
+![kết quả dự án 2.4](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/Screenshot%202024-02-27%20145919.png)
+![kết quả dự án 2.4](https://github.com/HoangNguyet/2024_CSE485_CongngheWeb/blob/Nguyet/img/Screenshot%202024-02-27%20150011.png)
 
 
