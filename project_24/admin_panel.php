@@ -7,8 +7,22 @@
 </head>
 <body>
 <?php
-global $users;
-include "users.php";
+ $users = [
+        [
+            "username" => "lanhuong",
+            "password" => password_hash("31101977", PASSWORD_DEFAULT),
+            "name" => "Huong",
+            "email" => "lanhuongbn@gmail.com",
+            "role" => "admin",
+        ],
+        [
+            "username" => "mikebrown",
+            "password" => password_hash("02101999", PASSWORD_DEFAULT),
+            "name" => "Mike Brown",
+            "email" => "mikebrown@example.com",
+            "role" => "user",
+        ]
+    ];
 session_start();
 if (!isset($_SESSION['user_id']) || !isset($_COOKIE['logged_in']) ||
     $_SESSION['user_role'] !== "admin") {
