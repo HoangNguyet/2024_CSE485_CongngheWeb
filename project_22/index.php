@@ -76,6 +76,7 @@ $user=[
                 <label for="email">Email</label><br>
                 <input type="text" name="email" value="<?php echo $user['email'];?>" required>
                 <br>
+                    <button type="submit">Save</button>
 
             </form>
         </div>

@@ -77,3 +77,6 @@ input[type="file"]::before {
 input[type="file"]:hover::before {
     background: #0069d9;
 }
+.button1{
+    border: #111111 solid 1px;
+}
